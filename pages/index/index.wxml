@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="introduction">
+    <text class="name">汉川市新河镇杰克针车行</text>
+    <text class="info">地址:  汉川市新河镇汉正工业园长风大道A2-13号</text>
+    <text class="info">手机号码:  15802742482</text>
+  </view>
+
+  <view class="classify">
+    <view class="classify-item left">
+      <image src="../image/8.jpg" class="slide-image"/>
+    </view>
+    <view class="classify-item right">
+      <image src="../image/9.jpg" class="slide-image"/>
+    </view>
+    <view class="classify-item left word">
+      产品介绍
+    </view>
+    <view class="classify-item right word">
+      针车配件
+    </view>
+  </view>
+
+  <view>
+  
+  </view>
+
+  <view class="footer">
+    <icon type="search" size="20" bindtap="viewMap"/>
+    <text>湖北省汉川市新河镇汉正工业园长风大道A2-13号</text>
+  </view>
+</view>

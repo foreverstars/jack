@@ -9,16 +9,16 @@ Page({
     interval: 5000,
     duration: 1000,
     imgUrls: [
-      '../image/4.jpg',
-      '../image/5.jpg',
-      '../image/6.jpg',
-      '../image/7.jpg'
+      '../image/1.1.jpg',
+      '../image/2.1.jpg',
+      '../image/3.1.jpg',
+      '../image/4.1.jpg'
     ]
   },
 
-  viewMap: function () {
-    wx.navigateTo({
-      url: '/pages/map/map'
+  call: function () {
+    wx.makePhoneCall({
+      phoneNumber: '13476249257'
     })
   }
 })
